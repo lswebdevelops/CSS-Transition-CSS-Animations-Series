@@ -13,13 +13,11 @@ padding: 5px;
     background-color: pink;
     width: 300px;
     height: 300px;
-    transition: transform 100ms ease-in-out;
-    
-}
-.trigger:hover .box{
-    transform: 
-        translate(200px, 140px)rotate(45deg);
-
-    
+    /* transition: transform 1000ms ease-in-out; */
+    /* goes up and then starts, for example: */
+    transition: transform 1000ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    /* if the mouse goes over me, do nothing */
+    pointer-events: none;
+    transform: translate(200px, 140px) rotate(20deg);
     
 }
