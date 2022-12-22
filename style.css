@@ -3,7 +3,7 @@ body{
     padding: 40px;
     color: white;
 }
-.trigger{
+body{
     display: flex;
     flex-wrap: wrap;
     gap: 35px;

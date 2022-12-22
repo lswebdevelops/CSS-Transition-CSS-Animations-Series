@@ -4,9 +4,6 @@
 // });
 // now not using jquery: 
 
-const boxes = document.querySelectorAll('.box');
-boxes.forEach(function (box){
-    box.addEventListener('click', function(){
-        this.classList.toggle('is-paused');
-    })
+$('html').on('click', function(){
+    $(this).find('body').append('<div class="box"></div>');
 })
