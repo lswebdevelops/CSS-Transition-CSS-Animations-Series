@@ -1,8 +1,12 @@
+html{
+    background-color: bisque;
+}
 nav {
-    padding: 50px;
-    text-align: center;
+    padding: 0px 23px 0 0 ;
+    text-align: right;
   }
   nav > ul {
+    text-align: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -13,8 +17,8 @@ nav {
   nav > ul > li {
     float: left;
     width: 150px;
-    height: 65px;
-    line-height: 65px;
+    height: 35px;
+    line-height: 35px;
     position: relative;
     text-transform: uppercase;
     font-size: 14px;
@@ -60,6 +64,7 @@ nav {
   
   li {
     opacity: 0;
+    transform-origin: top center;
   }
   
   li:nth-child(1) {
@@ -90,11 +95,11 @@ nav {
   @keyframes menu1 {
     0% {
       opacity: 0;
-      transform: rotateY(-90deg) translateY(30px);
+      transform: rotateX(-90deg) translateX(30px);
     }
     100% {
       opacity: 1;
-      transform: rotateY(0deg) translateY(0px);
+      transform: rotateX(0deg) translateX(0px);
     }
   }
   
