@@ -1,27 +1,22 @@
 body{
-    padding: 50px;
-    ;
+    background-color: #333;
+    padding: 40px;
 }
-
-.box{
-    display: inline-block;
-    background-color: pink;
-    width: 200px;
-    position: relative;
-    height: 200px;
-}
-.box:hover{
-    
+.box {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
     animation-name: myframes;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
-    animation-direction: normal;/* reverse, alternate, normal */
-    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+  
+  .box:hover {
     animation-play-state: running;
-    ;
-}
+  }
+  
+     
 @keyframes myframes {
     0%{
         background-color: white;
@@ -37,9 +32,8 @@ body{
    35%{
     background-color: rgb(108, 108, 31);
    }  
-   50%{
-    background-color: rgb(63, 10, 10);
-
+    100% {
+      transform: rotate(360deg);
     }
     
    65%{
@@ -54,6 +48,6 @@ body{
     background-color: rgb(184, 184, 99);
    }
     100%{
-        background-color: white;
+        background-color: yellow;
     }
 }
