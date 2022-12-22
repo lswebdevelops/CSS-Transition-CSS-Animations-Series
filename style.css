@@ -9,11 +9,11 @@ body{
     animation-name: myframes;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
   }
   
-  .box:hover {
-    animation-play-state: running;
+  .box.is-paused {
+    animation-play-state: paused;
   }
   
      
