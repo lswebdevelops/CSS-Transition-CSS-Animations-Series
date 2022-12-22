@@ -7,12 +7,16 @@ padding: 5px;
     background-color: pink;
     width: 300px;
     height: 300px;
+   
    position: relative;
-   animation: myframes 2s ease-in-out 0s infinite;
-
     
 }
-
+.box:hover{
+   
+   animation: myframes 2s ease-in-out 0s infinite;
+    
+}
+/* 
 @keyframes myframes {
     from {
       height: 200px;
@@ -20,6 +24,26 @@ padding: 5px;
   
     to {
     height: 600px;    
+    background-color: orange;
+    }
+
+  } */
+  
+@keyframes myframes {
+   0% {
+      height: 200px;
+    }
+    10%, 40%{
+        width: 400px;
+        background-color: aquamarine;
+    }
+    45% ,90%{
+        background-color: blue;
+        width: 300px;
+    }
+    100% {
+        width: 500px;
+    height: 500px;    
     background-color: orange;
     }
 
