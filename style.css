@@ -1,14 +1,19 @@
 body{
-    background-color: #333;
+    background-color: rgb(194, 188, 188);
     padding: 40px;
     color: white;
+}
+.trigger{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
 }
 .box {
     border-radius: 10px;
     width: 100px;
     height: 100px;
     animation-name: myframes;
-    animation-duration: 1.2s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-play-state: running;
   }
@@ -33,22 +38,26 @@ body{
    35%{
     background-color: rgb(108, 108, 31);
    }  
-    100% {
-      transform: rotate(360deg);
-    }
+   
     
-   65%{
+   35%, 65%{
     background-color: rgb(35, 123, 34);
    }
    
-   75%{
-    background-color: rgb(188, 188, 151);
-   }
+   75% {
+    transform: rotate(-360deg);
+  }
+  
    
-   85%{
-    background-color: rgb(183, 99, 184);
-   }
     100%{
         background-color: yellow;
     }
+}
+.box:hover{
+    border: solid firebrick 4px;
+    padding: 5px;
+}
+
+.round{
+    border-radius: 40%;
 }
